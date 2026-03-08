@@ -87,17 +87,12 @@ class HomeScreen extends StatelessWidget {
         borderRadius: const BorderRadius.vertical(
           top: Radius.circular(12),
         ),
-        child: Image.network(
-          pet.imageUrl,
-          height: 180,
-          width: double.infinity,
-          fit: BoxFit.cover,
-          errorBuilder: (_, __, ___) => Container(
-            height: 180,
-            color: Colors.grey[300],
-            child: const Icon(Icons.pets, size: 100),
-          ),
-        ),
+        child: Image.asset(
+  "assets/images/pet1.jpg",
+  height: 150,
+  width: double.infinity,
+  fit: BoxFit.cover,
+)
       ),
 
       // Details

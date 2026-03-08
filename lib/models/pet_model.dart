@@ -6,7 +6,7 @@ class PetModel {
   final int age;
   final String breed;
   final String location;
-  final String imageUrl;
+  // final String imageUrl;
   final String ownerId;
   final DateTime createdAt;
 
@@ -16,7 +16,7 @@ class PetModel {
     required this.age,
     required this.breed,
     required this.location,
-    required this.imageUrl,
+    // required this.imageUrl,
     required this.ownerId,
     required this.createdAt,
   });
@@ -31,7 +31,7 @@ class PetModel {
       age: (data['age'] ?? 0).toInt(),
       breed: data['breed'] ?? '',
       location: data['location'] ?? '',
-      imageUrl: data['imageUrl'] ?? '',
+      // imageUrl: data['imageUrl'] ?? '',
       ownerId: data['ownerId'] ?? '',
       createdAt:
           timestamp != null ? timestamp.toDate() : DateTime.now(),
@@ -45,7 +45,7 @@ class PetModel {
       'age': age,
       'breed': breed,
       'location': location,
-      'imageUrl': imageUrl,
+      // 'imageUrl': imageUrl,
       'ownerId': ownerId,
       'createdAt': createdAt,
     };

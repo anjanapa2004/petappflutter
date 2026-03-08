@@ -39,7 +39,7 @@ class _AddPetScreenState extends State<AddPetScreen> {
         breed: breedController.text.trim(),
         age: int.parse(ageController.text.trim()),
         location: locationController.text.trim(),
-        imageUrl: '', // 🔥 No storage
+        // imageUrl: '', 
         ownerId: user.uid,
         createdAt: DateTime.now(),
       );

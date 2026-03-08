@@ -34,38 +34,6 @@ class PetFirestoreService {
 
     return docRef.id;
   }
-// UPDATE PET
-  
-  Future<void> updatePet(PetModel pet) async {
-    await _petsRef.doc(pet.id).update({
-      'name': pet.name,
-      'age': pet.age,
-      'breed': pet.breed,
-      'location': pet.location,
-      'imageUrl': pet.imageUrl,
-    });
-  }
 
-  // DELETE PET
 
-  Future<void> deletePet(String petId) async {
-    await _petsRef.doc(petId).delete();
-  }
-
-  // GET PETS BY OWNER
-
-  Stream<List<PetModel>> getPetsByOwner(String ownerId) {
-    return _petsRef
-        .where('ownerId', isEqualTo: ownerId)
-        .orderBy('createdAt', descending: true)
-        .snapshots()
-        .map((snapshot) {
-      return snapshot.docs.map((doc) {
-        return PetModel.fromMap(
-          doc.data() as Map<String, dynamic>,
-          doc.id,
-        );
-      }).toList();
-    });
-  }
 }

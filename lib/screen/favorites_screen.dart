@@ -40,14 +40,8 @@ class FavoritesScreen extends StatelessWidget {
                 return ListTile(
                   leading: ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      pet.imageUrl,
-                      width: 55,
-                      height: 55,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) =>
-                          const Icon(Icons.pets),
-                    ),
+                    child:Icon(Icons.pets),
+                   
                   ),
                   title: Text(
                     pet.name,
