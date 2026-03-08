@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1049608875536",
+    "project_id": "petapp-flutter-fd18c",
+    "storage_bucket": "petapp-flutter-fd18c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049608875536:android:60f01aa89a8453beeb6495",
+        "android_client_info": {
+          "package_name": "com.example.petapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049608875536-vji3daejslh9lhsad0js8mm4dq284p6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petapp",
+            "certificate_hash": "f0eb9f21147d23151ee676924d312b1374261283"
+          }
+        },
+        {
+          "client_id": "1049608875536-hoe3nqvuicnin79qqs5ja381amc5l6am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbba5ORQRsu1xnn9J7CZ0NPhnxSrqojGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049608875536-hoe3nqvuicnin79qqs5ja381amc5l6am.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1049608875536-sdjtd3pfhj3o0k7j5hlbf93cdve8iope.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.petapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
